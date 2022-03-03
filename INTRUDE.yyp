@@ -15,6 +15,7 @@
     {"id":{"name":"sprPlayerCollision","path":"sprites/sprPlayerCollision/sprPlayerCollision.yy",},"order":11,},
     {"id":{"name":"sprShadow","path":"sprites/sprShadow/sprShadow.yy",},"order":13,},
     {"id":{"name":"sprSparkles","path":"sprites/sprSparkles/sprSparkles.yy",},"order":15,},
+    {"id":{"name":"rmTest2","path":"rooms/rmTest2/rmTest2.yy",},"order":2,},
     {"id":{"name":"sprPlayerPunch","path":"sprites/sprPlayerPunch/sprPlayerPunch.yy",},"order":17,},
     {"id":{"name":"background0","path":"sprites/background0/background0.yy",},"order":1,},
     {"id":{"name":"tlTiles","path":"sprites/tlTiles/tlTiles.yy",},"order":3,},
@@ -44,6 +45,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"rmTest","path":"rooms/rmTest/rmTest.yy",},},
+    {"roomId":{"name":"rmTest2","path":"rooms/rmTest2/rmTest2.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
