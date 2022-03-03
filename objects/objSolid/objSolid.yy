@@ -1,20 +1,14 @@
 {
-  "spriteId": {
-    "name": "sprInvisibleWall",
-    "path": "sprites/sprInvisibleWall/sprInvisibleWall.yy",
-  },
-  "solid": true,
-  "visible": false,
+  "spriteId": null,
+  "solid": false,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "objSolid",
-    "path": "objects/objSolid/objSolid.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
-  "physicsShape": 0,
-  "physicsGroup": 0,
+  "physicsShape": 1,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -23,7 +17,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -31,7 +27,7 @@
     "path": "folders/Objects/Collision.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objInvisibleWall",
+  "name": "objSolid",
   "tags": [],
   "resourceType": "GMObject",
 }
