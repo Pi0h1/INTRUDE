@@ -2,22 +2,40 @@
 
 globalvar delta; delta = 1;
 
-enum P_ANG
+enum CARDINAL
 {
 	E,
+	NE,
 	N,
+	NW,
 	W,
+	SW,
 	S,
-	length
+	SE,
 }
 
-fSpeed = 1.5;
+enum P_STATE
+{
+	DEFAULT,
+}
+
+fSpeed = 1;
 fAcceleration = 0.75;
 fDeceleration = 0.25;
+fFriction = 1;
 fXsp = 0;
 fYsp = 0;
 
+nState = 0;
+
 bCanMove = true;
+bForceStill = false;
+
+fCardinal = 0;
+fDirection = 0;
+fSpeedDirection = 0;
+fSpeedDistance = 0;
+
 
 cControls = {};
 cControls.MoveUp = ord( "W" );
@@ -28,12 +46,9 @@ cControls.Button1 = ord( "Z" );
 cControls.Button2 = ord( "X" );
 cControls.Button3 = ord( "C");
 
-fDirection = 0;
-fCardinal = P_ANG.E;
-
 cThrottle = {};
 cThrottle.m_fDeadZone = 17.5 / 100;
-cThrottle.m_fSnapRange = 30;
+cThrottle.m_fSnapRange = 25;
 cThrottle.m_fAxisH = 0;
 cThrottle.m_fAxisV = 0;
 cThrottle.m_fDirection = 0;
@@ -96,7 +111,8 @@ PSprite = function( sprites ) constructor
 cSprites = {};
 cSprites.Idle = new PSprite( [ sprPlayerIdleRight, sprPlayerIdleUp, sprPlayerIdleLeft, sprPlayerIdleDown ] );
 cSprites.Walk = new PSprite( [ sprPlayerWalkRight, sprPlayerWalkUp, sprPlayerWalkLeft, sprPlayerWalkDown ] );
-//cSprites.Punch = new PSprite( [ sprPlayerPunchRight ] );
+cSprites.WalkSlow = new PSprite( [ sprPlayerWalkRight, sprPlayerWalkUp, sprPlayerWalkLeft, sprPlayerWalkDown ] );
+cSprites.Punch = new PSprite( [ sprPlayerPunchRight,sprPlayerPunchUp, sprPlayerPunchLeft, sprPlayerPunchDown ] );
 
 GetSprite = function( sprite )
 {
@@ -110,12 +126,26 @@ GetSprite = function( sprite )
 	else if is_struct( sprite )
 		get = sprite;
 	
-	switch fCardinal
+	if is_struct( get )
 	{
-		case 0:
-			break;
+		switch fCardinal
+		{
+			case CARDINAL.E:
+			case CARDINAL.NE:
+			case CARDINAL.SE:
+				return get.East;
+			
+			case CARDINAL.W:
+			case CARDINAL.NW:
+			case CARDINAL.SW:
+				return get.West;
+			
+			case CARDINAL.N:
+				return get.North;
+			
+			case CARDINAL.S:
+				return get.South;
+		}
 	}
-	
-	
-	return 0;
+	return sprite_index;
 }
