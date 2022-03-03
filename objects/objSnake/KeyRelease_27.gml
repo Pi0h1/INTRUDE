@@ -1,2 +1,2 @@
-with all game_end();
+game_end();
 

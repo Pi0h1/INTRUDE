@@ -1,3 +1,4 @@
-sprite_index=sprPlayerPunch image_speed=0.2
+
+sprite_index=sprPlayerPunchRight image_speed=0.2
 move=0
 

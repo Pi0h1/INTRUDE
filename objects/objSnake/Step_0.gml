@@ -1,26 +1,114 @@
-if move=0 exit
-depth=-y
+if ( bCanMove )
+{
+	var bGamepad = gamepad_is_connected( 0 );
+	
+	#region Throttle Input
+	if ( bGamepad )
+	{
+		var fGamepadAxisH = gamepad_axis_value( 0, gp_axislh );
+		var fGamepadAxisV = gamepad_axis_value( 0, gp_axislv );
+		
+		
+	}
+	
+	if ( bGamepad && abs( fGamepadAxisH ) > cThrottle.m_fDeadZone )
+		cThrottle.m_fAxisH = ( fGamepadAxisH ) ;
+	else
+		cThrottle.m_fAxisH = ( keyboard_check( cControls.MoveRight ) - keyboard_check( cControls.MoveLeft ) );
+	if ( bGamepad && abs( fGamepadAxisV ) > cThrottle.m_fDeadZone )
+		cThrottle.m_fAxisV = fGamepadAxisV;
+	else
+		cThrottle.m_fAxisV = ( keyboard_check( cControls.MoveDown ) - keyboard_check( cControls.MoveUp ) );
+	
+	cThrottle.m_fDirection = point_direction( 0, 0, cThrottle.m_fAxisH, cThrottle.m_fAxisV );
+	if ( bGamepad )
+	{
+		var snap_angle = ( round( cThrottle.m_fDirection / 45 ) * 45 );
+		if ( cThrottle.m_fDirection > snap_angle - ( cThrottle.m_fSnapRange / 2 ) && cThrottle.m_fDirection < snap_angle + ( cThrottle.m_fSnapRange / 2 ) )
+			cThrottle.m_fDirection = snap_angle;
+	}
+	cThrottle.m_fScale = min( 1, point_distance( 0, 0, cThrottle.m_fAxisH, cThrottle.m_fAxisV ) );
+	#endregion
+	
+	
+	var spd_dir = point_direction( 0, 0, fXsp, fYsp  );
+	
+	var dest_xsp = dcos( cThrottle.m_fDirection ) * cThrottle.m_fScale * fSpeed;
+	var dest_ysp = -dsin( cThrottle.m_fDirection ) * cThrottle.m_fScale * fSpeed;
 
-up=keyboard_check(ord("W"))
-down=keyboard_check(ord("S"))
-right=keyboard_check(ord("D"))
-left=keyboard_check(ord("A"))
+	if true
+	{
+		var dest_dir = point_direction( fXsp, fYsp, dest_xsp, dest_ysp );
+		var dest_dis = point_distance( fXsp, fYsp, dest_xsp, dest_ysp );
+		var amount = abs( angle_difference( spd_dir, dest_dir ) ) / 180;
+		
+		var inc = lerp( fAcceleration * cThrottle.m_fScale, fDeceleration, amount );
+	
+		if ( dest_dis < inc )
+		{
+			fXsp = dest_xsp;
+			fYsp = dest_ysp;
+		}
+		else
+		{
+			fXsp += dcos( dest_dir ) * inc * delta;
+			fYsp -= dsin( dest_dir ) * inc * delta;
+		}
+	
+	}
+	else
+	{
+		fXsp = dest_xsp;
+		fYsp = dest_ysp;
+	}
+}
+else
+{
+	fXsp = 0;
+	fYsp = 0;
+}
 
-r_up=keyboard_check_released(ord("W"))
-r_down=keyboard_check_released(ord("S"))
-r_right=keyboard_check_released(ord("D"))
-r_left=keyboard_check_released(ord("A"))
 
-if up {if place_free(x,y-spd){sprite_index=PlayerWalkUp y-=spd}}
-if down {if place_free(x,y+spd){sprite_index=PlayerWalkDown y+=spd}}
-if right {if place_free(x+spd,y){sprite_index=PlayerWalkRight x+=spd}}
-if left {if place_free(x-spd,y){sprite_index=PlayerWalkLeft x-=spd}}
+var xmove = fXsp * delta;
+var ymove = fYsp * delta;
 
-if r_up {sprite_index=PlayerIdleUp}
-if r_down {sprite_index=PlayerIdleDown}
-if r_right {sprite_index=PlayerIdleRight}
-if r_left {sprite_index=PlayerIdleLeft}
+if ( xmove > 0 )
+{
+	if place_free( x + xmove, y )
+		x += fXsp;
+	else
+	{
+		fXsp = 0;
+	}
+}
+else if ( xmove < 0 )
+{
+	if place_free( x + xmove, y )
+		x += fXsp;
+	else
+	{
+		fXsp = 0;
+	}
+}
 
-x=round(x)
-y=round(y)
 
+if ( ymove > 0 )
+{
+	if place_free( x, y + ymove )
+		y += fYsp;
+	else
+	{
+		fYsp = 0;
+	}
+}
+else if ( ymove < 0 )
+{
+	if place_free( x, y + ymove )
+		y += fYsp;
+	else
+	{
+		fYsp = 0;
+	}
+}
+
+depth = -y;
