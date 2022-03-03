@@ -1,0 +1,3 @@
+Imported layer depths for room(s) 'rmTest' were not adequately spaced. Unless updated this will have undefined results in game.
+Game speed set to 60
+Added compatibility script 'draw/draw_set_blend_mode.gml'
