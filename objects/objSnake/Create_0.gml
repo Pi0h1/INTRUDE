@@ -1,5 +1,5 @@
 //if !instance_exists(objCursor){instance_create(x,y,objCursor)}
-
+fade=1
 globalvar delta; delta = 1;
 
 enum CARDINAL

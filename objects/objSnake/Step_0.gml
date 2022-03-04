@@ -1,3 +1,5 @@
+if fade > 0 {fade -= 0.05}
+
 if ( bForceStill )
 {
 	fXsp = 0;

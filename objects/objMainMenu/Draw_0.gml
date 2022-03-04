@@ -1,0 +1,1 @@
+fntStandard(room_width/2,room_height/2+48,"PRESS START BUTTON", fntDescription, c_lime);
