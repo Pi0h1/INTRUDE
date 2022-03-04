@@ -1,3 +1,5 @@
+
+
 // Constructor for directional sprites
 // > [ E, NE, N, NW, W, SW, S, SE ]
 // or

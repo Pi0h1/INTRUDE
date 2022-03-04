@@ -77,7 +77,7 @@ function CharacterThrottle()
 	{
 		var dest_dir = point_direction( fXsp, fYsp, dest_xsp, dest_ysp );
 		var dest_dis = point_distance( fXsp, fYsp, dest_xsp, dest_ysp );
-		var amount = abs( angle_difference( spd_dir, dest_dir ) ) / 180;
+		var amount = max( 0, abs( angle_difference( spd_dir, dest_dir ) ) - 90 ) / 180;
 		
 		var inc = lerp( fAcceleration * cThrottle.m_fScale, fDeceleration, amount ) * fFriction;
 	

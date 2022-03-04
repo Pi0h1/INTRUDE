@@ -17,16 +17,20 @@ enum CARDINAL
 enum P_STATE
 {
 	DEFAULT,
+	CROUCH,
+	CRAWL,
 }
 
-fSpeed = 1;
-fAcceleration = 0.75;
-fDeceleration = 0.25;
+fSpeed = 15;
+fAcceleration = 0.05;
+fDeceleration = 1;
 fFriction = 1;
 fXsp = 0;
 fYsp = 0;
 
-nState = 0;
+fHeight = 25;
+
+nState = P_STATE.DEFAULT;
 
 bCanMove = true;
 bForceStill = false;

@@ -36,6 +36,7 @@
     {"id":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},"order":2,},
     {"id":{"name":"tlTiles","path":"sprites/tlTiles/tlTiles.yy",},"order":3,},
     {"id":{"name":"sprPlayerPunchUp","path":"sprites/sprPlayerPunchUp/sprPlayerPunchUp.yy",},"order":3,},
+    {"id":{"name":"objRoom","path":"objects/objRoom/objRoom.yy",},"order":1,},
     {"id":{"name":"background0_tileset","path":"tilesets/background0_tileset/background0_tileset.yy",},"order":1,},
     {"id":{"name":"tlTiles_tileset","path":"tilesets/tlTiles_tileset/tlTiles_tileset.yy",},"order":3,},
     {"id":{"name":"objSnake","path":"objects/objSnake/objSnake.yy",},"order":0,},
