@@ -66,7 +66,12 @@ function GetCardinalSprite( sprite )
 	
 		if is_struct( get )
 		{
-			switch fCardinal
+			switch nCardinal
+			
+			
+			
+			
+			
 			{
 				case CARDINAL.E:
 				case CARDINAL.NE:
