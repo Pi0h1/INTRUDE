@@ -75,8 +75,8 @@
   "RoomOrderNodes": [
     {"roomId":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"roomId":{"name":"rmMenu","path":"rooms/rmMenu/rmMenu.yy",},},
-    {"roomId":{"name":"rmOuterHeaven","path":"rooms/rmOuterHeaven/rmOuterHeaven.yy",},},
     {"roomId":{"name":"rmTest2","path":"rooms/rmTest2/rmTest2.yy",},},
+    {"roomId":{"name":"rmOuterHeaven","path":"rooms/rmOuterHeaven/rmOuterHeaven.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
