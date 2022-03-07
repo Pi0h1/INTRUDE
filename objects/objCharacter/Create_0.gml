@@ -18,7 +18,8 @@ fXsp = 0;
 fYsp = 0;
 fZsp = 0;
 
-nCornerStep = 6;
+//nCornerStep = 6;
+nCornerStep = 9;
 
 fSpeed = 1;
 fAcceleration = 0.66;

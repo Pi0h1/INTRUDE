@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprPlayerIdleRight",
-    "path": "sprites/sprPlayerIdleRight/sprPlayerIdleRight.yy",
+    "name": "sprEnemyCommonIdleRight",
+    "path": "sprites/sprEnemyCommonIdleRight/sprEnemyCommonIdleRight.yy",
   },
   "solid": false,
   "visible": true,

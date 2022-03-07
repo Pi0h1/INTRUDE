@@ -21,7 +21,7 @@ fSeeRange = 8 * 14;
 fSeeRadius = 4;
 
 fPatrolWait = 0;
-fPatrolTimer = 0;
+fPatrolTimer = -1;
 
 cSprites.Idle = new CardinalSprite( [ sprEnemyCommonIdleRight, sprEnemyCommonIdleUp, sprEnemyCommonIdleLeft, sprEnemyCommonIdleDown ] );
 cSprites.Walk = new CardinalSprite( [ sprEnemyCommonWalkRight, sprEnemyCommonWalkUp, sprEnemyCommonWalkLeft, sprEnemyCommonWalkDown ] );

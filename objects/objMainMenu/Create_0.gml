@@ -1,3 +1,2 @@
-fade = 1;
-
 depth=-99
+goal = oh_F1_Entrance;

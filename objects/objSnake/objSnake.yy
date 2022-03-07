@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprPlayerIdleRight",
-    "path": "sprites/sprPlayerIdleRight/sprPlayerIdleRight.yy",
+    "name": "sprSnakeRight",
+    "path": "sprites/sprSnakeRight/sprSnakeRight.yy",
   },
   "solid": false,
   "visible": true,

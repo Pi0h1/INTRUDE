@@ -112,42 +112,42 @@ function CharacterMove()
 		}
 	}
 	
-	// Y Movement
-	
-	if ( ymove != 0 )
-	{
-		inst = instance_place( x, desty, objSolid );
-		if ( inst == noone )
-		{
-			y = desty;
-		}
-		else
-		{
-			if ( ymove > 0 )
-			{
-				y = floor( inst.bbox_top - ( bbox_bottom - y ) );
-			}
-			else
-			{
-				y = ceil( inst.bbox_bottom + ( y - bbox_top ) );
-			}
-			
-			if ( xmove == 0 ) && place_free( x - abs( ymove ), y ) && place_free( x - nCornerStep, desty )
-			{
-				x -= abs( ymove );
-			}
-			else if ( xmove == 0 ) && place_free( x, y + abs( ymove ) ) && place_free( x + nCornerStep, desty )
-			{
-				x += abs( ymove );
-			}
-			else
-			{
-				bWallTouching = true;
-				nWallTouchingY = sign( fYsp );
-				fYsp = 0;
-			}
-		}
-	}
+	    // Y Movement
+    
+    if ( ymove != 0 )
+    {
+        inst = instance_place( x, desty, objSolid );
+        if ( inst == noone )
+        {
+            y = desty;
+        }
+        else
+        {
+            if ( ymove > 0 )
+            {
+                y = floor( inst.bbox_top - ( bbox_bottom - y ) );
+            }
+            else
+            {
+                y = ceil( inst.bbox_bottom + ( y - bbox_top ) );
+            }
+            
+            if ( xmove == 0 ) && place_free( x - abs( ymove ), y ) && place_free( x - nCornerStep, desty )
+            {
+                x -= abs( ymove );
+            }
+            else if ( xmove == 0 ) && place_free( x + abs( ymove ), y ) && place_free( x + nCornerStep, desty )
+            {
+                x += abs( ymove );
+            }
+            else
+            {
+                bWallTouching = true;
+                nWallTouchingY = sign( fYsp );
+                fYsp = 0;
+            }
+        }
+    }
 	
 	instance_activate_all();
 	

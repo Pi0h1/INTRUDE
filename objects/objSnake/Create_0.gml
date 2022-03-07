@@ -10,7 +10,7 @@ enum P_STATE
 
 // Sprites
 cSprites = {};
-cSprites.Idle = new CardinalSprite( [ sprPlayerIdleRight, sprPlayerIdleUp, sprPlayerIdleLeft, sprPlayerIdleDown ] );
-cSprites.Walk = new CardinalSprite( [ sprPlayerWalkRight, sprPlayerWalkUp, sprPlayerWalkLeft, sprPlayerWalkDown ] );
-cSprites.WalkSlow = new CardinalSprite( [ sprPlayerWalkRight, sprPlayerWalkUp, sprPlayerWalkLeft, sprPlayerWalkDown ] );
+cSprites.Idle = new CardinalSprite( [ sprSnakeRight, sprSnakeUp, sprSnakeLeft, sprSnakeDown ] );
+cSprites.Walk = new CardinalSprite( [ sprSnakeRightWalk, sprSnakeUpWalk, sprSnakeLeftWalk, sprSnakeDownWalk ] );
+cSprites.WalkSlow = new CardinalSprite( [ sprSnakeRightWalk, sprSnakeUpWalk, sprSnakeLeftWalk, sprSnakeDownWalk ] );
 cSprites.Punch = new CardinalSprite( [ sprPlayerPunchRight,sprPlayerPunchUp, sprPlayerPunchLeft, sprPlayerPunchDown ] );

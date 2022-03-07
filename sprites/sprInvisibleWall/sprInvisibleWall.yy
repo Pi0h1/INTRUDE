@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"sprInvisibleWall","path":"sprites/sprInvisibleWall/sprInvisibleWall.yy",},
     "resourceVersion": "1.4",
-    "name": "",
+    "name": "sprInvisibleWall",
     "tags": [],
     "resourceType": "GMSequence",
   },
