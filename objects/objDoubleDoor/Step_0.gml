@@ -1,16 +1,37 @@
-if point_distance(x,y,objPlayer.x,objPlayer.y) < 64
+var Inst = instance_nearest( x, y, objCharacter )
+
+if ( Inst )
 {
-	isOpen=true;	
+	if ( Inst.y <= y + 32 ) && ( Inst.y >= y - 32  )
+	{
+		bOpen = true;
+	}
+	else if ( bAutoClose )
+	{
+		bOpen = false;
+	}
 }
 
-if (isOpen and distanceTravelled < 32) {
-	distanceTravelled+=1*delta;
-	isTravelling=true
-	if isRight{
-	x-=1*delta
-	} else {
-	x+=1*delta;
+if ( bFlipped )
+{
+	if ( bOpen )
+	{
+		x = min( x + fOpenSpeed * delta, xstart + fOpenDistance );
 	}
-} else {
-	isTravelling=false;
+	else
+	{
+		x = max( xstart, x - fCloseSpeed * delta );
+	}
 }
+else
+{
+	if ( bOpen )
+	{
+		x = max( x - fOpenSpeed * delta, xstart - fOpenDistance );
+	}
+	else
+	{
+		x = min( xstart, x + fCloseSpeed * delta );
+	}
+}
+

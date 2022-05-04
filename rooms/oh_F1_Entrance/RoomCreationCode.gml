@@ -1,1 +1,1 @@
-bgmPlay(bgmBigShell);
+BgmPlay(bgmBigShell);

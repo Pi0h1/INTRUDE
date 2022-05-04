@@ -28,7 +28,7 @@
     "path": "folders/Objects/Characters/Player.yy",
   },
   "resourceVersion": "1.0",
-  "name": "objCam",
+  "name": "objCam_Sector",
   "tags": [],
   "resourceType": "GMObject",
 }

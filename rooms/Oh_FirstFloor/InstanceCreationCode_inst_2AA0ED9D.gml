@@ -1,1 +1,0 @@
-isRight=true;
