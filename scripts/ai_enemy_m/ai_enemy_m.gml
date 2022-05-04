@@ -1,0 +1,7 @@
+enum AI_ENEMY_STATE
+{
+	DEFAULT,
+	STATIC,
+	PATROL,
+	
+}

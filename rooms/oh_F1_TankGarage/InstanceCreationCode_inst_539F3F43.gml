@@ -1,0 +1,1 @@
+AI_EnemySetSpawnState(E_STATE.PATROL)
