@@ -1,5 +1,0 @@
-CharacterPlayerInput();
-	
-CharacterThrottle();
-
-CharacterMove();
