@@ -1,2 +1,2 @@
-BgmPlay(bgmTara);
+BgmPlay(bgmThemeOfTara);
 
