@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "Collision",
-    "path": "folders/Objects/Collision.yy",
+    "name": "!Sprites",
+    "path": "folders/!Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprNoise",

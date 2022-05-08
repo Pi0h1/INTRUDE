@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "INTRUDE",
-    "path": "INTRUDE.yyp",
+    "name": "!Sprites",
+    "path": "folders/!Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBrick",
