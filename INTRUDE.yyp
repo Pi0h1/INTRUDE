@@ -83,6 +83,7 @@
     {"id":{"name":"sprFence","path":"sprites/sprFence/sprFence.yy",},"order":15,},
     {"id":{"name":"ai_enemy_c","path":"scripts/ai_enemy_c/ai_enemy_c.yy",},"order":4,},
     {"id":{"name":"fntLogo","path":"fonts/fntLogo/fntLogo.yy",},"order":1,},
+    {"id":{"name":"objSingleDoor","path":"objects/objSingleDoor/objSingleDoor.yy",},"order":22,},
     {"id":{"name":"sprBoxLarge","path":"sprites/sprBoxLarge/sprBoxLarge.yy",},"order":1,},
     {"id":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},"order":2,},
     {"id":{"name":"sprTiles","path":"sprites/sprTiles/sprTiles.yy",},"order":3,},
