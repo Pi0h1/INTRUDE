@@ -1,8 +1,9 @@
-var Inst = instance_nearest( x, y, objCharacter )
+var Inst = instance_nearest( x, y, DoorTarget )
 
 if ( Inst )
 {
-	if ( Inst.y <= y + 32 ) && ( Inst.y >= y - 32  ) && ( Inst.x <= xstart + 32 ) && ( Inst.x >= xstart - 32  )
+	if ( Inst.y <= y + 32 ) && ( Inst.y >= y - 32  ) && ( Inst.x <= xstart + 32 ) && ( Inst.x >= xstart - 32 )
+	&& ( Inst.iKeycardLevel >= iKeycardLevel )
 	{
 		bOpen = true;
 	}

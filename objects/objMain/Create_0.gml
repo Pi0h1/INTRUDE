@@ -5,3 +5,4 @@ globalvar delta; delta = 1;
 
 // Input
 globalvar PlayerInput; PlayerInput = new CPlayerInput();
+

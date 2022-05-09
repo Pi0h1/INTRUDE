@@ -44,7 +44,7 @@
             {"id":"1b132025-2dfa-4a42-ad30-ae8606f43327","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"343eb352-7ec7-4d87-b5b0-26f6ff707657","path":"sprites/sprShadow/sprShadow.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
-    "visibleRange": {"x":0.0,"y":0.0,},
+    "visibleRange": null,
     "lockOrigin": false,
     "showBackdrop": true,
     "showBackdropImage": false,
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "!Sprites",
-    "path": "folders/!Sprites.yy",
+    "path": "folders/Graphics/!Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprShadow",

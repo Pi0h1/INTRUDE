@@ -29,7 +29,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Collision",
-    "path": "folders/Objects/Collision.yy",
+    "path": "folders/Code/Objects/Collision.yy",
   },
   "resourceVersion": "1.0",
   "name": "objGoal",

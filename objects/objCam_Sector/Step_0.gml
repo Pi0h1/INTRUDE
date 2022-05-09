@@ -1,6 +1,3 @@
-
-var Target = objPlayer;
-
 if !instance_exists( Target )
 {
 	return;
@@ -22,5 +19,5 @@ x += dcos( fDir ) * fSpd;
 y -= dsin( fDir ) * fSpd;
 
 
-
 camera_set_view_pos( view_camera, x, y );
+

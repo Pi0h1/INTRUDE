@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "objSolid",
-    "path": "objects/objSolid/objSolid.yy",
+    "name": "objWall",
+    "path": "objects/objWall/objWall.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,8 +29,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision",
-    "path": "folders/Objects/Collision.yy",
+    "name": "Walls",
+    "path": "folders/Code/Objects/Level/Walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "objFence",

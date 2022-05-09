@@ -28,7 +28,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Furniture",
-    "path": "folders/Objects/Collision/Furniture.yy",
+    "path": "folders/Code/Objects/Level/Furniture.yy",
   },
   "resourceVersion": "1.0",
   "name": "objBoxLarge",

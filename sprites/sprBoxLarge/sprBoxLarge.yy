@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 0,
   "bbox_right": 31,
-  "bbox_top": 12,
+  "bbox_top": 8,
   "bbox_bottom": 31,
   "HTile": false,
   "VTile": false,
@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Furniture",
-    "path": "folders/!Sprites/Furniture.yy",
+    "path": "folders/Graphics/!Sprites/Level/Furniture.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprBoxLarge",

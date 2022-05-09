@@ -130,7 +130,7 @@
   "maintainGms1Font": false,
   "parent": {
     "name": "Fonts",
-    "path": "folders/Fonts.yy",
+    "path": "folders/Graphics/Fonts.yy",
   },
   "resourceVersion": "1.0",
   "name": "fntDescription",

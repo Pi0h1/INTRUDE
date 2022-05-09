@@ -6,6 +6,7 @@ function CCharacterThrottle() constructor
 	m_fScale = 0;
 }
 
+
 function CharacterThrottle()
 {
 	
@@ -44,6 +45,7 @@ function CharacterThrottle()
 		fYsp = dest_ysp;
 	}
 }
+
 
 function CharacterMove()
 {
@@ -112,42 +114,42 @@ function CharacterMove()
 		}
 	}
 	
-	    // Y Movement
-    
-    if ( ymove != 0 )
-    {
-        inst = instance_place( x, desty, objSolid );
-        if ( inst == noone )
-        {
-            y = desty;
-        }
-        else
-        {
-            if ( ymove > 0 )
-            {
-                y = floor( inst.bbox_top - ( bbox_bottom - y ) );
-            }
-            else
-            {
-                y = ceil( inst.bbox_bottom + ( y - bbox_top ) );
-            }
-            
-            if ( xmove == 0 ) && place_free( x - abs( ymove ), y ) && place_free( x - iCornerStep, desty )
-            {
-                x -= abs( ymove );
-            }
-            else if ( xmove == 0 ) && place_free( x + abs( ymove ), y ) && place_free( x + iCornerStep, desty )
-            {
-                x += abs( ymove );
-            }
-            else
-            {
-                bWallTouching = true;
-                iWallTouchingY = sign( fYsp );
-                fYsp = 0;
-            }
-        }
-    }
+		// Y Movement
+	
+	if ( ymove != 0 )
+	{
+		inst = instance_place( x, desty, objSolid );
+		if ( inst == noone )
+		{
+			y = desty;
+		}
+		else
+		{
+			if ( ymove > 0 )
+			{
+				y = floor( inst.bbox_top - ( bbox_bottom - y ) );
+			}
+			else
+			{
+				y = ceil( inst.bbox_bottom + ( y - bbox_top ) );
+			}
+			
+			if ( xmove == 0 ) && place_free( x - abs( ymove ), y ) && place_free( x - iCornerStep, desty )
+			{
+				x -= abs( ymove );
+			}
+			else if ( xmove == 0 ) && place_free( x + abs( ymove ), y ) && place_free( x + iCornerStep, desty )
+			{
+				x += abs( ymove );
+			}
+			else
+			{
+				bWallTouching = true;
+				iWallTouchingY = sign( fYsp );
+				fYsp = 0;
+			}
+		}
+	}
 	
 	instance_activate_all();
 	
@@ -157,11 +159,17 @@ function CharacterMove()
 	fSpeedDistance = point_distance( 0, 0, fXsp, fYsp );
 
 	if ( fSpeedDistance != 0 )
-		fDirection = fSpeedDirection;
-
-	iCardinal = round( fDirection / 45 );
+		CharacterLookDirection( fSpeedDirection );
 
 }
+
+
+function CharacterLookDirection( fDirection )
+{
+	self.fDirection = fDirection;
+	iCardinal = round( fDirection / 45 );
+}
+
 
 function CharacterPlayerInput()
 {

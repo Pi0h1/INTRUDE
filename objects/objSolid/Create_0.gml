@@ -1,6 +1,6 @@
 dir=0
 
-if object_get_parent(object_index)!=objWall
+if true || object_get_parent(object_index)!=objWall
 {
 	if (visible)
 	{

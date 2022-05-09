@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "References",
-    "path": "folders/References.yy",
+    "path": "folders/Graphics/References.yy",
   },
   "resourceVersion": "1.0",
   "name": "imgSnake",

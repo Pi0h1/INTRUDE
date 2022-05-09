@@ -14,6 +14,8 @@ enum E_STATE
 iState = 0;
 iMainState = 0;
 
+fnMainState = fnState;
+
 fHomeX = x;
 fHomeY = y;
 

@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Walk",
-    "path": "folders/!Sprites/Snake/Walk.yy",
+    "path": "folders/Graphics/!Sprites/Characters/Player/Snake/Walk.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSnakeLeftWalk",

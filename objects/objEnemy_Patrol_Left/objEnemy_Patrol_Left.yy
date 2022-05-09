@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Enemies",
-    "path": "folders/Objects/Characters/Enemies.yy",
+    "path": "folders/Code/Objects/Characters/Enemies.yy",
   },
   "resourceVersion": "1.0",
   "name": "objEnemy_Patrol_Left",

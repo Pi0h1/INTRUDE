@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Walk",
-    "path": "folders/!Sprites/Enemy/Common/Walk.yy",
+    "path": "folders/Graphics/!Sprites/Characters/Enemy/Common/Walk.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEnemyCommonWalkLeft",

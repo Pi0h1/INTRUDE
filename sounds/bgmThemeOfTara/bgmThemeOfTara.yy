@@ -14,8 +14,8 @@
   "soundFile": "bgmThemeOfTara.mp3",
   "duration": 192.86203,
   "parent": {
-    "name": "Sounds",
-    "path": "folders/Sounds.yy",
+    "name": "Music",
+    "path": "folders/Audio/Music.yy",
   },
   "resourceVersion": "1.0",
   "name": "bgmThemeOfTara",

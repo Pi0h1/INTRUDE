@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision",
-    "path": "folders/Objects/Collision.yy",
+    "name": "Decor",
+    "path": "folders/Code/Objects/Level/Decor.yy",
   },
   "resourceVersion": "1.0",
   "name": "objWater",

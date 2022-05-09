@@ -1280,7 +1280,7 @@
   },
   "parent": {
     "name": "Tile Sets",
-    "path": "folders/Tile Sets.yy",
+    "path": "folders/Graphics/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
   "name": "tlTiles",

@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Idle",
-    "path": "folders/!Sprites/Enemy/Common/Idle.yy",
+    "path": "folders/Graphics/!Sprites/Characters/Enemy/Common/Idle.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprEnemyCommonIdleRight",

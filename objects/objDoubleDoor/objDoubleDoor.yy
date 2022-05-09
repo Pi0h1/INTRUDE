@@ -30,8 +30,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Collision",
-    "path": "folders/Objects/Collision.yy",
+    "name": "Doors",
+    "path": "folders/Code/Objects/Level/Doors.yy",
   },
   "resourceVersion": "1.0",
   "name": "objDoubleDoor",

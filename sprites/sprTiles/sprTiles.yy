@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "tilesets",
-    "path": "folders/!Sprites/tilesets.yy",
+    "name": "Tiles",
+    "path": "folders/Graphics/!Sprites/Level/Tiles.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprTiles",

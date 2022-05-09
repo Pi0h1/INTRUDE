@@ -93,8 +93,8 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "!Sprites",
-    "path": "folders/!Sprites.yy",
+    "name": "Walls",
+    "path": "folders/Graphics/!Sprites/Level/Walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprFenceV",

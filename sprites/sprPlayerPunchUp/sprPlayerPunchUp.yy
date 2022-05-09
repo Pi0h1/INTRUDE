@@ -86,7 +86,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Punch",
-    "path": "folders/!Sprites/Snake/Punch.yy",
+    "path": "folders/Graphics/!Sprites/Characters/Player/Snake/Punch.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprPlayerPunchUp",

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "!Sprites",
-    "path": "folders/!Sprites.yy",
+    "name": "Doors",
+    "path": "folders/Graphics/!Sprites/Level/Doors.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprDoubleDoor",

@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Furniture",
-    "path": "folders/!Sprites/Furniture.yy",
+    "path": "folders/Graphics/!Sprites/Level/Furniture.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprWallDarkBottom",

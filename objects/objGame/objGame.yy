@@ -30,7 +30,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Objects",
-    "path": "folders/Objects.yy",
+    "path": "folders/Code/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "objGame",

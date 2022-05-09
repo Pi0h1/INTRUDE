@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Idle",
-    "path": "folders/!Sprites/Snake/Idle.yy",
+    "path": "folders/Graphics/!Sprites/Characters/Player/Snake/Idle.yy",
   },
   "resourceVersion": "1.0",
   "name": "sprSnakeLeft",

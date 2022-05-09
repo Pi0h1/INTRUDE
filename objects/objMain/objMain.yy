@@ -26,7 +26,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Main",
-    "path": "folders/Objects/Main.yy",
+    "path": "folders/Code/Objects/Main.yy",
   },
   "resourceVersion": "1.0",
   "name": "objMain",
