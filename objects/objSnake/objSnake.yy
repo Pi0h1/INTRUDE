@@ -5,6 +5,7 @@
   },
   "solid": false,
   "visible": true,
+  "managed": true,
   "spriteMaskId": {
     "name": "sprPlayerCollision",
     "path": "sprites/sprPlayerCollision/sprPlayerCollision.yy",
